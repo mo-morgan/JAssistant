@@ -104,6 +104,7 @@
     <Content Include="imgs\makise.jpg" />
     <Content Include="imgs\makise_circle.png" />
     <Content Include="imgs\makise_pfp.jpg" />
+    <Content Include="imgs\send_24px.png" />
     <Content Include="imgs\settings_26px.png" />
     <Content Include="imgs\sound-off_50px.png" />
     <Content Include="imgs\sound-on_50px.png" />

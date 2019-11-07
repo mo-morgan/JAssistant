@@ -14,7 +14,10 @@ namespace JAssistant
     {
         public chatbox()
         {
-            InitializeComponent();
+            if (!this.DesignMode)
+            {
+                InitializeComponent();
+            }
         }
     }
 }

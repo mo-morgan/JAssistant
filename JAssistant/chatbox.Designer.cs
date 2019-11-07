@@ -28,67 +28,91 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.panel1.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(chatbox));
+            this.panelSendTextHolder = new System.Windows.Forms.Panel();
+            this.bunifuButtonSendText = new Bunifu.Framework.UI.BunifuImageButton();
+            this.bunifuTextBox = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.panelChatHolder = new System.Windows.Forms.Panel();
+            this.panelSendTextHolder.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuButtonSendText)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // panelSendTextHolder
             // 
-            this.panel1.Controls.Add(this.bunifuMaterialTextbox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 537);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(678, 107);
-            this.panel1.TabIndex = 0;
+            this.panelSendTextHolder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panelSendTextHolder.Controls.Add(this.bunifuButtonSendText);
+            this.panelSendTextHolder.Controls.Add(this.bunifuTextBox);
+            this.panelSendTextHolder.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelSendTextHolder.Location = new System.Drawing.Point(0, 403);
+            this.panelSendTextHolder.Name = "panelSendTextHolder";
+            this.panelSendTextHolder.Size = new System.Drawing.Size(248, 83);
+            this.panelSendTextHolder.TabIndex = 0;
             // 
-            // panel2
+            // bunifuButtonSendText
             // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(678, 537);
-            this.panel2.TabIndex = 1;
+            this.bunifuButtonSendText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bunifuButtonSendText.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuButtonSendText.Image = ((System.Drawing.Image)(resources.GetObject("bunifuButtonSendText.Image")));
+            this.bunifuButtonSendText.ImageActive = null;
+            this.bunifuButtonSendText.Location = new System.Drawing.Point(217, 16);
+            this.bunifuButtonSendText.Name = "bunifuButtonSendText";
+            this.bunifuButtonSendText.Size = new System.Drawing.Size(17, 28);
+            this.bunifuButtonSendText.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuButtonSendText.TabIndex = 1;
+            this.bunifuButtonSendText.TabStop = false;
+            this.bunifuButtonSendText.Zoom = 10;
             // 
-            // bunifuMaterialTextbox1
+            // bunifuTextBox
             // 
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox1.HintText = "";
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox1.LineThickness = 3;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(45, 46);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(528, 43);
-            this.bunifuMaterialTextbox1.TabIndex = 0;
-            this.bunifuMaterialTextbox1.Text = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bunifuTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.bunifuTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuTextBox.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bunifuTextBox.HintForeColor = System.Drawing.Color.Empty;
+            this.bunifuTextBox.HintText = "";
+            this.bunifuTextBox.isPassword = false;
+            this.bunifuTextBox.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.bunifuTextBox.LineIdleColor = System.Drawing.Color.Gray;
+            this.bunifuTextBox.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.bunifuTextBox.LineThickness = 4;
+            this.bunifuTextBox.Location = new System.Drawing.Point(15, 16);
+            this.bunifuTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuTextBox.Name = "bunifuTextBox";
+            this.bunifuTextBox.Size = new System.Drawing.Size(195, 28);
+            this.bunifuTextBox.TabIndex = 0;
+            this.bunifuTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // panelChatHolder
+            // 
+            this.panelChatHolder.AutoScroll = true;
+            this.panelChatHolder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.panelChatHolder.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelChatHolder.Location = new System.Drawing.Point(0, 0);
+            this.panelChatHolder.Name = "panelChatHolder";
+            this.panelChatHolder.Size = new System.Drawing.Size(248, 403);
+            this.panelChatHolder.TabIndex = 1;
             // 
             // chatbox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelChatHolder);
+            this.Controls.Add(this.panelSendTextHolder);
             this.Name = "chatbox";
-            this.Size = new System.Drawing.Size(678, 644);
-            this.panel1.ResumeLayout(false);
+            this.Size = new System.Drawing.Size(248, 486);
+            this.panelSendTextHolder.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuButtonSendText)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
+        private System.Windows.Forms.Panel panelSendTextHolder;
+        private System.Windows.Forms.Panel panelChatHolder;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuTextBox;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuButtonSendText;
     }
 }

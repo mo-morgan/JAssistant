@@ -40,20 +40,23 @@
             this.tabHighlight = new System.Windows.Forms.Panel();
             this.panelHome = new System.Windows.Forms.Panel();
             this.makisePicture = new System.Windows.Forms.PictureBox();
+            this.panelMessageHolder = new System.Windows.Forms.Panel();
             this.panelMessageTitleHolder = new System.Windows.Forms.Panel();
             this.buttonSoundOnOff = new System.Windows.Forms.Button();
             this.buttonLanguageSwitch = new System.Windows.Forms.Button();
             this.panelMakiseRoundPicture = new System.Windows.Forms.Panel();
             this.labelMakiseName = new System.Windows.Forms.Label();
-            this.panelMessageHolder = new System.Windows.Forms.Panel();
             this.panelTasksHolder = new System.Windows.Forms.Panel();
             this.panelCalendar = new System.Windows.Forms.Panel();
+            this.chatbox1 = new JAssistant.chatbox();
+            this.chatbox2 = new JAssistant.chatbox();
             this.panelTabHolder.SuspendLayout();
             this.panelAppNameHolder.SuspendLayout();
             this.panelHome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.makisePicture)).BeginInit();
-            this.panelMessageTitleHolder.SuspendLayout();
             this.panelMessageHolder.SuspendLayout();
+            this.panelMessageTitleHolder.SuspendLayout();
+            this.panelTasksHolder.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelTabHolder
@@ -196,9 +199,6 @@
             // 
             // makisePicture
             // 
-            this.makisePicture.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.makisePicture.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("makisePicture.BackgroundImage")));
             this.makisePicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.makisePicture.Location = new System.Drawing.Point(0, 0);
@@ -206,6 +206,18 @@
             this.makisePicture.Size = new System.Drawing.Size(740, 489);
             this.makisePicture.TabIndex = 9;
             this.makisePicture.TabStop = false;
+            // 
+            // panelMessageHolder
+            // 
+            this.panelMessageHolder.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelMessageHolder.Controls.Add(this.chatbox1);
+            this.panelMessageHolder.Controls.Add(this.panelMessageTitleHolder);
+            this.panelMessageHolder.Location = new System.Drawing.Point(740, 0);
+            this.panelMessageHolder.Name = "panelMessageHolder";
+            this.panelMessageHolder.Size = new System.Drawing.Size(309, 724);
+            this.panelMessageHolder.TabIndex = 10;
             // 
             // panelMessageTitleHolder
             // 
@@ -268,21 +280,12 @@
             this.labelMakiseName.TabIndex = 0;
             this.labelMakiseName.Text = "Makise Kurisu";
             // 
-            // panelMessageHolder
-            // 
-            this.panelMessageHolder.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelMessageHolder.Controls.Add(this.panelMessageTitleHolder);
-            this.panelMessageHolder.Location = new System.Drawing.Point(740, 0);
-            this.panelMessageHolder.Name = "panelMessageHolder";
-            this.panelMessageHolder.Size = new System.Drawing.Size(309, 724);
-            this.panelMessageHolder.TabIndex = 10;
-            // 
             // panelTasksHolder
             // 
             this.panelTasksHolder.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelTasksHolder.Controls.Add(this.chatbox2);
             this.panelTasksHolder.Location = new System.Drawing.Point(0, 487);
             this.panelTasksHolder.Name = "panelTasksHolder";
             this.panelTasksHolder.Size = new System.Drawing.Size(740, 237);
@@ -295,6 +298,25 @@
             this.panelCalendar.Name = "panelCalendar";
             this.panelCalendar.Size = new System.Drawing.Size(1049, 724);
             this.panelCalendar.TabIndex = 11;
+            // 
+            // chatbox1
+            // 
+            this.chatbox1.BackColor = System.Drawing.Color.White;
+            this.chatbox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chatbox1.Location = new System.Drawing.Point(0, 63);
+            this.chatbox1.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.chatbox1.Name = "chatbox1";
+            this.chatbox1.Size = new System.Drawing.Size(309, 661);
+            this.chatbox1.TabIndex = 1;
+            // 
+            // chatbox2
+            // 
+            this.chatbox2.BackColor = System.Drawing.Color.White;
+            this.chatbox2.Location = new System.Drawing.Point(1205, 36);
+            this.chatbox2.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.chatbox2.Name = "chatbox2";
+            this.chatbox2.Size = new System.Drawing.Size(413, 785);
+            this.chatbox2.TabIndex = 0;
             // 
             // Form1
             // 
@@ -315,9 +337,10 @@
             this.panelAppNameHolder.PerformLayout();
             this.panelHome.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.makisePicture)).EndInit();
+            this.panelMessageHolder.ResumeLayout(false);
             this.panelMessageTitleHolder.ResumeLayout(false);
             this.panelMessageTitleHolder.PerformLayout();
-            this.panelMessageHolder.ResumeLayout(false);
+            this.panelTasksHolder.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -343,6 +366,8 @@
         private System.Windows.Forms.Label labelMakiseName;
         private System.Windows.Forms.Panel panelTasksHolder;
         private System.Windows.Forms.Panel panelCalendar;
+        private chatbox chatbox1;
+        private chatbox chatbox2;
     }
 }
 
