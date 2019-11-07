@@ -15,8 +15,11 @@ namespace JAssistant
         public Form1()
         {
             InitializeComponent();
-            panelLeft.Height = buttonHome.Height;
-            panelLeft.Top = buttonHome.Top;
+            tabHighlight.Height = buttonHome.Height;
+            tabHighlight.Top = buttonHome.Top;
+
+            // Setting the minimum size of the window
+            this.MinimumSize = new System.Drawing.Size(1200, 750);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -26,32 +29,32 @@ namespace JAssistant
 
         private void buttonSetting_Click(object sender, EventArgs e)
         {
-            panelLeft.Height = buttonSettings.Height;
-            panelLeft.Top = buttonSettings.Top;
+            tabHighlight.Height = buttonSettings.Height;
+            tabHighlight.Top = buttonSettings.Top;
         }
 
         private void buttonHome_Click(object sender, EventArgs e)
         {
-            panelLeft.Height = buttonHome.Height;
-            panelLeft.Top = buttonHome.Top;
+            tabHighlight.Height = buttonHome.Height;
+            tabHighlight.Top = buttonHome.Top;
         }
 
         private void buttonCalendar_Click(object sender, EventArgs e)
         {
-            panelLeft.Height = buttonCalendar.Height;
-            panelLeft.Top = buttonCalendar.Top;
+            tabHighlight.Height = buttonCalendar.Height;
+            tabHighlight.Top = buttonCalendar.Top;
         }
 
         private void buttonLearn_Click(object sender, EventArgs e)
         {
-            panelLeft.Height = buttonLearn.Height;
-            panelLeft.Top = buttonLearn.Top;
+            tabHighlight.Height = buttonLearn.Height;
+            tabHighlight.Top = buttonLearn.Top;
         }
 
         private void buttonRandomFun_Click(object sender, EventArgs e)
         {
-            panelLeft.Height = buttonRandomFun.Height;
-            panelLeft.Top = buttonRandomFun.Top;
+            tabHighlight.Height = buttonRandomFun.Height;
+            tabHighlight.Top = buttonRandomFun.Top;
         }
     }
 }

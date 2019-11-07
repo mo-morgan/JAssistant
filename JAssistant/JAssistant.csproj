@@ -83,10 +83,16 @@
   <ItemGroup>
     <Content Include="imgs\books_26px.png" />
     <Content Include="imgs\calendar_26px.png" />
+    <Content Include="imgs\english_50px.png" />
     <Content Include="imgs\headset_26px.png" />
     <Content Include="imgs\home_26px.png" />
+    <Content Include="imgs\japanese_50px.png" />
     <Content Include="imgs\makise.jpg" />
+    <Content Include="imgs\makise_circle.png" />
+    <Content Include="imgs\makise_pfp.jpg" />
     <Content Include="imgs\settings_26px.png" />
+    <Content Include="imgs\sound-off_50px.png" />
+    <Content Include="imgs\sound-on_50px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -29,35 +29,43 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelTabHolder = new System.Windows.Forms.Panel();
             this.buttonHome = new System.Windows.Forms.Button();
             this.buttonCalendar = new System.Windows.Forms.Button();
             this.buttonLearn = new System.Windows.Forms.Button();
             this.buttonRandomFun = new System.Windows.Forms.Button();
             this.buttonSettings = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panelLeft = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelAppNameHolder = new System.Windows.Forms.Panel();
+            this.labelAppName = new System.Windows.Forms.Label();
+            this.panelTasksHolder = new System.Windows.Forms.Panel();
+            this.makisePicture = new System.Windows.Forms.PictureBox();
+            this.tabHighlight = new System.Windows.Forms.Panel();
+            this.panelMessageHolder = new System.Windows.Forms.Panel();
+            this.panelMessageTitleHolder = new System.Windows.Forms.Panel();
+            this.panelMakiseRoundPicture = new System.Windows.Forms.Panel();
+            this.labelMakiseName = new System.Windows.Forms.Label();
+            this.buttonLanguageSwitch = new System.Windows.Forms.Button();
+            this.buttonSoundOnOff = new System.Windows.Forms.Button();
+            this.panelTabHolder.SuspendLayout();
+            this.panelAppNameHolder.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.makisePicture)).BeginInit();
+            this.panelMessageHolder.SuspendLayout();
+            this.panelMessageTitleHolder.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // panelTabHolder
             // 
-            this.panel1.Controls.Add(this.buttonHome);
-            this.panel1.Controls.Add(this.buttonCalendar);
-            this.panel1.Controls.Add(this.buttonLearn);
-            this.panel1.Controls.Add(this.buttonRandomFun);
-            this.panel1.Controls.Add(this.buttonSettings);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(182, 724);
-            this.panel1.TabIndex = 0;
+            this.panelTabHolder.Controls.Add(this.buttonHome);
+            this.panelTabHolder.Controls.Add(this.buttonCalendar);
+            this.panelTabHolder.Controls.Add(this.buttonLearn);
+            this.panelTabHolder.Controls.Add(this.buttonRandomFun);
+            this.panelTabHolder.Controls.Add(this.buttonSettings);
+            this.panelTabHolder.Controls.Add(this.panelAppNameHolder);
+            this.panelTabHolder.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelTabHolder.Location = new System.Drawing.Point(0, 0);
+            this.panelTabHolder.Name = "panelTabHolder";
+            this.panelTabHolder.Size = new System.Drawing.Size(182, 724);
+            this.panelTabHolder.TabIndex = 0;
             // 
             // buttonHome
             // 
@@ -144,88 +152,172 @@
             this.buttonSettings.UseVisualStyleBackColor = true;
             this.buttonSettings.Click += new System.EventHandler(this.buttonSetting_Click);
             // 
-            // panel3
+            // panelAppNameHolder
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(182, 87);
-            this.panel3.TabIndex = 0;
+            this.panelAppNameHolder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.panelAppNameHolder.Controls.Add(this.labelAppName);
+            this.panelAppNameHolder.Location = new System.Drawing.Point(0, 0);
+            this.panelAppNameHolder.Name = "panelAppNameHolder";
+            this.panelAppNameHolder.Size = new System.Drawing.Size(182, 87);
+            this.panelAppNameHolder.TabIndex = 0;
             // 
-            // label1
+            // labelAppName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 27.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(160, 45);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "JAssistant";
+            this.labelAppName.AutoSize = true;
+            this.labelAppName.Font = new System.Drawing.Font("Monotype Corsiva", 27.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAppName.Location = new System.Drawing.Point(12, 18);
+            this.labelAppName.Name = "labelAppName";
+            this.labelAppName.Size = new System.Drawing.Size(160, 45);
+            this.labelAppName.TabIndex = 0;
+            this.labelAppName.Text = "JAssistant";
             // 
-            // panel2
+            // panelTasksHolder
             // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(182, 505);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(835, 219);
-            this.panel2.TabIndex = 1;
+            this.panelTasksHolder.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelTasksHolder.Location = new System.Drawing.Point(182, 487);
+            this.panelTasksHolder.Name = "panelTasksHolder";
+            this.panelTasksHolder.Size = new System.Drawing.Size(740, 237);
+            this.panelTasksHolder.TabIndex = 1;
             // 
-            // pictureBox1
+            // makisePicture
             // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(182, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(835, 505);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.makisePicture.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.makisePicture.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("makisePicture.BackgroundImage")));
+            this.makisePicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.makisePicture.Location = new System.Drawing.Point(182, 0);
+            this.makisePicture.Name = "makisePicture";
+            this.makisePicture.Size = new System.Drawing.Size(740, 489);
+            this.makisePicture.TabIndex = 2;
+            this.makisePicture.TabStop = false;
             // 
-            // panelLeft
+            // tabHighlight
             // 
-            this.panelLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.panelLeft.Location = new System.Drawing.Point(182, 93);
-            this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(14, 91);
-            this.panelLeft.TabIndex = 6;
+            this.tabHighlight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.tabHighlight.Location = new System.Drawing.Point(182, 93);
+            this.tabHighlight.Name = "tabHighlight";
+            this.tabHighlight.Size = new System.Drawing.Size(14, 91);
+            this.tabHighlight.TabIndex = 6;
+            // 
+            // panelMessageHolder
+            // 
+            this.panelMessageHolder.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelMessageHolder.Controls.Add(this.panelMessageTitleHolder);
+            this.panelMessageHolder.Location = new System.Drawing.Point(922, 0);
+            this.panelMessageHolder.Name = "panelMessageHolder";
+            this.panelMessageHolder.Size = new System.Drawing.Size(309, 724);
+            this.panelMessageHolder.TabIndex = 7;
+            // 
+            // panelMessageTitleHolder
+            // 
+            this.panelMessageTitleHolder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.panelMessageTitleHolder.Controls.Add(this.buttonSoundOnOff);
+            this.panelMessageTitleHolder.Controls.Add(this.buttonLanguageSwitch);
+            this.panelMessageTitleHolder.Controls.Add(this.panelMakiseRoundPicture);
+            this.panelMessageTitleHolder.Controls.Add(this.labelMakiseName);
+            this.panelMessageTitleHolder.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelMessageTitleHolder.Location = new System.Drawing.Point(0, 0);
+            this.panelMessageTitleHolder.Name = "panelMessageTitleHolder";
+            this.panelMessageTitleHolder.Size = new System.Drawing.Size(309, 63);
+            this.panelMessageTitleHolder.TabIndex = 0;
+            // 
+            // panelMakiseRoundPicture
+            // 
+            this.panelMakiseRoundPicture.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelMakiseRoundPicture.BackgroundImage")));
+            this.panelMakiseRoundPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelMakiseRoundPicture.Location = new System.Drawing.Point(19, 12);
+            this.panelMakiseRoundPicture.Name = "panelMakiseRoundPicture";
+            this.panelMakiseRoundPicture.Size = new System.Drawing.Size(48, 45);
+            this.panelMakiseRoundPicture.TabIndex = 1;
+            // 
+            // labelMakiseName
+            // 
+            this.labelMakiseName.AutoSize = true;
+            this.labelMakiseName.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMakiseName.ForeColor = System.Drawing.Color.White;
+            this.labelMakiseName.Image = ((System.Drawing.Image)(resources.GetObject("labelMakiseName.Image")));
+            this.labelMakiseName.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.labelMakiseName.Location = new System.Drawing.Point(73, 18);
+            this.labelMakiseName.Name = "labelMakiseName";
+            this.labelMakiseName.Size = new System.Drawing.Size(140, 24);
+            this.labelMakiseName.TabIndex = 0;
+            this.labelMakiseName.Text = "Makise Kurisu";
+            // 
+            // buttonLanguageSwitch
+            // 
+            this.buttonLanguageSwitch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonLanguageSwitch.BackgroundImage")));
+            this.buttonLanguageSwitch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonLanguageSwitch.FlatAppearance.BorderSize = 0;
+            this.buttonLanguageSwitch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLanguageSwitch.Location = new System.Drawing.Point(219, 14);
+            this.buttonLanguageSwitch.Name = "buttonLanguageSwitch";
+            this.buttonLanguageSwitch.Size = new System.Drawing.Size(36, 35);
+            this.buttonLanguageSwitch.TabIndex = 2;
+            this.buttonLanguageSwitch.Text = "\r\n";
+            this.buttonLanguageSwitch.UseVisualStyleBackColor = true;
+            // 
+            // buttonSoundOnOff
+            // 
+            this.buttonSoundOnOff.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonSoundOnOff.BackgroundImage")));
+            this.buttonSoundOnOff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonSoundOnOff.FlatAppearance.BorderSize = 0;
+            this.buttonSoundOnOff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSoundOnOff.Location = new System.Drawing.Point(261, 14);
+            this.buttonSoundOnOff.Name = "buttonSoundOnOff";
+            this.buttonSoundOnOff.Size = new System.Drawing.Size(36, 35);
+            this.buttonSoundOnOff.TabIndex = 3;
+            this.buttonSoundOnOff.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.ClientSize = new System.Drawing.Size(1017, 724);
-            this.Controls.Add(this.panelLeft);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(1231, 724);
+            this.Controls.Add(this.panelMessageHolder);
+            this.Controls.Add(this.tabHighlight);
+            this.Controls.Add(this.makisePicture);
+            this.Controls.Add(this.panelTasksHolder);
+            this.Controls.Add(this.panelTabHolder);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelTabHolder.ResumeLayout(false);
+            this.panelAppNameHolder.ResumeLayout(false);
+            this.panelAppNameHolder.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.makisePicture)).EndInit();
+            this.panelMessageHolder.ResumeLayout(false);
+            this.panelMessageTitleHolder.ResumeLayout(false);
+            this.panelMessageTitleHolder.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panelTabHolder;
+        private System.Windows.Forms.Panel panelTasksHolder;
+        private System.Windows.Forms.Panel panelAppNameHolder;
+        private System.Windows.Forms.Label labelAppName;
         private System.Windows.Forms.Button buttonSettings;
         private System.Windows.Forms.Button buttonHome;
         private System.Windows.Forms.Button buttonCalendar;
         private System.Windows.Forms.Button buttonLearn;
         private System.Windows.Forms.Button buttonRandomFun;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panelLeft;
+        private System.Windows.Forms.PictureBox makisePicture;
+        private System.Windows.Forms.Panel tabHighlight;
+        private System.Windows.Forms.Panel panelMessageHolder;
+        private System.Windows.Forms.Panel panelMessageTitleHolder;
+        private System.Windows.Forms.Panel panelMakiseRoundPicture;
+        private System.Windows.Forms.Label labelMakiseName;
+        private System.Windows.Forms.Button buttonLanguageSwitch;
+        private System.Windows.Forms.Button buttonSoundOnOff;
     }
 }
 
