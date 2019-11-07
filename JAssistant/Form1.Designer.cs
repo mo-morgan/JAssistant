@@ -37,20 +37,23 @@
             this.buttonSettings = new System.Windows.Forms.Button();
             this.panelAppNameHolder = new System.Windows.Forms.Panel();
             this.labelAppName = new System.Windows.Forms.Label();
-            this.panelTasksHolder = new System.Windows.Forms.Panel();
-            this.makisePicture = new System.Windows.Forms.PictureBox();
             this.tabHighlight = new System.Windows.Forms.Panel();
-            this.panelMessageHolder = new System.Windows.Forms.Panel();
+            this.panelHome = new System.Windows.Forms.Panel();
+            this.makisePicture = new System.Windows.Forms.PictureBox();
             this.panelMessageTitleHolder = new System.Windows.Forms.Panel();
+            this.buttonSoundOnOff = new System.Windows.Forms.Button();
+            this.buttonLanguageSwitch = new System.Windows.Forms.Button();
             this.panelMakiseRoundPicture = new System.Windows.Forms.Panel();
             this.labelMakiseName = new System.Windows.Forms.Label();
-            this.buttonLanguageSwitch = new System.Windows.Forms.Button();
-            this.buttonSoundOnOff = new System.Windows.Forms.Button();
+            this.panelMessageHolder = new System.Windows.Forms.Panel();
+            this.panelTasksHolder = new System.Windows.Forms.Panel();
+            this.panelCalendar = new System.Windows.Forms.Panel();
             this.panelTabHolder.SuspendLayout();
             this.panelAppNameHolder.SuspendLayout();
+            this.panelHome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.makisePicture)).BeginInit();
-            this.panelMessageHolder.SuspendLayout();
             this.panelMessageTitleHolder.SuspendLayout();
+            this.panelMessageHolder.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelTabHolder
@@ -171,29 +174,6 @@
             this.labelAppName.TabIndex = 0;
             this.labelAppName.Text = "JAssistant";
             // 
-            // panelTasksHolder
-            // 
-            this.panelTasksHolder.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelTasksHolder.Location = new System.Drawing.Point(182, 487);
-            this.panelTasksHolder.Name = "panelTasksHolder";
-            this.panelTasksHolder.Size = new System.Drawing.Size(740, 237);
-            this.panelTasksHolder.TabIndex = 1;
-            // 
-            // makisePicture
-            // 
-            this.makisePicture.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.makisePicture.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("makisePicture.BackgroundImage")));
-            this.makisePicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.makisePicture.Location = new System.Drawing.Point(182, 0);
-            this.makisePicture.Name = "makisePicture";
-            this.makisePicture.Size = new System.Drawing.Size(740, 489);
-            this.makisePicture.TabIndex = 2;
-            this.makisePicture.TabStop = false;
-            // 
             // tabHighlight
             // 
             this.tabHighlight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -202,15 +182,30 @@
             this.tabHighlight.Size = new System.Drawing.Size(14, 91);
             this.tabHighlight.TabIndex = 6;
             // 
-            // panelMessageHolder
+            // panelHome
             // 
-            this.panelMessageHolder.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.panelHome.Controls.Add(this.panelCalendar);
+            this.panelHome.Controls.Add(this.makisePicture);
+            this.panelHome.Controls.Add(this.panelMessageHolder);
+            this.panelHome.Controls.Add(this.panelTasksHolder);
+            this.panelHome.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelHome.Location = new System.Drawing.Point(182, 0);
+            this.panelHome.Name = "panelHome";
+            this.panelHome.Size = new System.Drawing.Size(1049, 724);
+            this.panelHome.TabIndex = 7;
+            // 
+            // makisePicture
+            // 
+            this.makisePicture.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelMessageHolder.Controls.Add(this.panelMessageTitleHolder);
-            this.panelMessageHolder.Location = new System.Drawing.Point(922, 0);
-            this.panelMessageHolder.Name = "panelMessageHolder";
-            this.panelMessageHolder.Size = new System.Drawing.Size(309, 724);
-            this.panelMessageHolder.TabIndex = 7;
+            this.makisePicture.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("makisePicture.BackgroundImage")));
+            this.makisePicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.makisePicture.Location = new System.Drawing.Point(0, 0);
+            this.makisePicture.Name = "makisePicture";
+            this.makisePicture.Size = new System.Drawing.Size(740, 489);
+            this.makisePicture.TabIndex = 9;
+            this.makisePicture.TabStop = false;
             // 
             // panelMessageTitleHolder
             // 
@@ -224,6 +219,31 @@
             this.panelMessageTitleHolder.Name = "panelMessageTitleHolder";
             this.panelMessageTitleHolder.Size = new System.Drawing.Size(309, 63);
             this.panelMessageTitleHolder.TabIndex = 0;
+            // 
+            // buttonSoundOnOff
+            // 
+            this.buttonSoundOnOff.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonSoundOnOff.BackgroundImage")));
+            this.buttonSoundOnOff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonSoundOnOff.FlatAppearance.BorderSize = 0;
+            this.buttonSoundOnOff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSoundOnOff.Location = new System.Drawing.Point(261, 14);
+            this.buttonSoundOnOff.Name = "buttonSoundOnOff";
+            this.buttonSoundOnOff.Size = new System.Drawing.Size(36, 35);
+            this.buttonSoundOnOff.TabIndex = 3;
+            this.buttonSoundOnOff.UseVisualStyleBackColor = true;
+            // 
+            // buttonLanguageSwitch
+            // 
+            this.buttonLanguageSwitch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonLanguageSwitch.BackgroundImage")));
+            this.buttonLanguageSwitch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonLanguageSwitch.FlatAppearance.BorderSize = 0;
+            this.buttonLanguageSwitch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLanguageSwitch.Location = new System.Drawing.Point(219, 14);
+            this.buttonLanguageSwitch.Name = "buttonLanguageSwitch";
+            this.buttonLanguageSwitch.Size = new System.Drawing.Size(36, 35);
+            this.buttonLanguageSwitch.TabIndex = 2;
+            this.buttonLanguageSwitch.Text = "\r\n";
+            this.buttonLanguageSwitch.UseVisualStyleBackColor = true;
             // 
             // panelMakiseRoundPicture
             // 
@@ -247,40 +267,41 @@
             this.labelMakiseName.TabIndex = 0;
             this.labelMakiseName.Text = "Makise Kurisu";
             // 
-            // buttonLanguageSwitch
+            // panelMessageHolder
             // 
-            this.buttonLanguageSwitch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonLanguageSwitch.BackgroundImage")));
-            this.buttonLanguageSwitch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonLanguageSwitch.FlatAppearance.BorderSize = 0;
-            this.buttonLanguageSwitch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLanguageSwitch.Location = new System.Drawing.Point(219, 14);
-            this.buttonLanguageSwitch.Name = "buttonLanguageSwitch";
-            this.buttonLanguageSwitch.Size = new System.Drawing.Size(36, 35);
-            this.buttonLanguageSwitch.TabIndex = 2;
-            this.buttonLanguageSwitch.Text = "\r\n";
-            this.buttonLanguageSwitch.UseVisualStyleBackColor = true;
+            this.panelMessageHolder.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelMessageHolder.Controls.Add(this.panelMessageTitleHolder);
+            this.panelMessageHolder.Location = new System.Drawing.Point(740, 0);
+            this.panelMessageHolder.Name = "panelMessageHolder";
+            this.panelMessageHolder.Size = new System.Drawing.Size(309, 724);
+            this.panelMessageHolder.TabIndex = 10;
             // 
-            // buttonSoundOnOff
+            // panelTasksHolder
             // 
-            this.buttonSoundOnOff.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonSoundOnOff.BackgroundImage")));
-            this.buttonSoundOnOff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonSoundOnOff.FlatAppearance.BorderSize = 0;
-            this.buttonSoundOnOff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSoundOnOff.Location = new System.Drawing.Point(261, 14);
-            this.buttonSoundOnOff.Name = "buttonSoundOnOff";
-            this.buttonSoundOnOff.Size = new System.Drawing.Size(36, 35);
-            this.buttonSoundOnOff.TabIndex = 3;
-            this.buttonSoundOnOff.UseVisualStyleBackColor = true;
+            this.panelTasksHolder.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelTasksHolder.Location = new System.Drawing.Point(0, 487);
+            this.panelTasksHolder.Name = "panelTasksHolder";
+            this.panelTasksHolder.Size = new System.Drawing.Size(740, 237);
+            this.panelTasksHolder.TabIndex = 8;
+            // 
+            // panelCalendar
+            // 
+            this.panelCalendar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelCalendar.Location = new System.Drawing.Point(0, 0);
+            this.panelCalendar.Name = "panelCalendar";
+            this.panelCalendar.Size = new System.Drawing.Size(1049, 724);
+            this.panelCalendar.TabIndex = 11;
             // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(1231, 724);
-            this.Controls.Add(this.panelMessageHolder);
+            this.Controls.Add(this.panelHome);
             this.Controls.Add(this.tabHighlight);
-            this.Controls.Add(this.makisePicture);
-            this.Controls.Add(this.panelTasksHolder);
             this.Controls.Add(this.panelTabHolder);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
@@ -291,10 +312,11 @@
             this.panelTabHolder.ResumeLayout(false);
             this.panelAppNameHolder.ResumeLayout(false);
             this.panelAppNameHolder.PerformLayout();
+            this.panelHome.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.makisePicture)).EndInit();
-            this.panelMessageHolder.ResumeLayout(false);
             this.panelMessageTitleHolder.ResumeLayout(false);
             this.panelMessageTitleHolder.PerformLayout();
+            this.panelMessageHolder.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -302,7 +324,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panelTabHolder;
-        private System.Windows.Forms.Panel panelTasksHolder;
         private System.Windows.Forms.Panel panelAppNameHolder;
         private System.Windows.Forms.Label labelAppName;
         private System.Windows.Forms.Button buttonSettings;
@@ -310,14 +331,17 @@
         private System.Windows.Forms.Button buttonCalendar;
         private System.Windows.Forms.Button buttonLearn;
         private System.Windows.Forms.Button buttonRandomFun;
-        private System.Windows.Forms.PictureBox makisePicture;
         private System.Windows.Forms.Panel tabHighlight;
+        private System.Windows.Forms.Panel panelHome;
+        private System.Windows.Forms.PictureBox makisePicture;
         private System.Windows.Forms.Panel panelMessageHolder;
         private System.Windows.Forms.Panel panelMessageTitleHolder;
+        private System.Windows.Forms.Button buttonSoundOnOff;
+        private System.Windows.Forms.Button buttonLanguageSwitch;
         private System.Windows.Forms.Panel panelMakiseRoundPicture;
         private System.Windows.Forms.Label labelMakiseName;
-        private System.Windows.Forms.Button buttonLanguageSwitch;
-        private System.Windows.Forms.Button buttonSoundOnOff;
+        private System.Windows.Forms.Panel panelTasksHolder;
+        private System.Windows.Forms.Panel panelCalendar;
     }
 }
 

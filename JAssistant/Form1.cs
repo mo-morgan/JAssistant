@@ -19,42 +19,62 @@ namespace JAssistant
             tabHighlight.Top = buttonHome.Top;
 
             // Setting the minimum size of the window
-            this.MinimumSize = new System.Drawing.Size(1200, 750);
+            this.MinimumSize = new System.Drawing.Size(900, 560);
+
+            // Initial panel
+            panelHome.Visible = true;
+            panelCalendar.Visible = false;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            tabHighlight.BringToFront();
         }
 
         private void buttonSetting_Click(object sender, EventArgs e)
         {
             tabHighlight.Height = buttonSettings.Height;
             tabHighlight.Top = buttonSettings.Top;
+
+            tabHighlight.BringToFront();
         }
 
         private void buttonHome_Click(object sender, EventArgs e)
         {
             tabHighlight.Height = buttonHome.Height;
             tabHighlight.Top = buttonHome.Top;
+
+            panelHome.Visible = true;
+            panelCalendar.Visible = false;
+
+            tabHighlight.BringToFront();
         }
 
         private void buttonCalendar_Click(object sender, EventArgs e)
         {
             tabHighlight.Height = buttonCalendar.Height;
             tabHighlight.Top = buttonCalendar.Top;
+
+            panelHome.Visible = false;
+            panelCalendar.Visible = true;
+
+            tabHighlight.BringToFront();
         }
 
         private void buttonLearn_Click(object sender, EventArgs e)
         {
             tabHighlight.Height = buttonLearn.Height;
             tabHighlight.Top = buttonLearn.Top;
+
+            tabHighlight.BringToFront();
         }
 
         private void buttonRandomFun_Click(object sender, EventArgs e)
         {
             tabHighlight.Height = buttonRandomFun.Height;
             tabHighlight.Top = buttonRandomFun.Top;
+
+            tabHighlight.BringToFront();
         }
     }
 }
