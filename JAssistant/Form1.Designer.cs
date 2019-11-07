@@ -184,10 +184,10 @@
             // 
             // panelHome
             // 
-            this.panelHome.Controls.Add(this.panelCalendar);
             this.panelHome.Controls.Add(this.makisePicture);
             this.panelHome.Controls.Add(this.panelMessageHolder);
             this.panelHome.Controls.Add(this.panelTasksHolder);
+            this.panelHome.Controls.Add(this.panelCalendar);
             this.panelHome.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelHome.Location = new System.Drawing.Point(182, 0);
             this.panelHome.Name = "panelHome";
@@ -244,6 +244,7 @@
             this.buttonLanguageSwitch.TabIndex = 2;
             this.buttonLanguageSwitch.Text = "\r\n";
             this.buttonLanguageSwitch.UseVisualStyleBackColor = true;
+            this.buttonLanguageSwitch.Click += new System.EventHandler(this.buttonLanguageSwitch_Click);
             // 
             // panelMakiseRoundPicture
             // 
