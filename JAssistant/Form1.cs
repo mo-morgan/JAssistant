@@ -106,8 +106,8 @@ namespace JAssistant
                     tabHighlight.Top = buttonCalendar.Top;
                     break;
                 case TAB_LEARN:
-                    tabHighlight.Height = buttonHome.Height;
-                    tabHighlight.Top = buttonHome.Top;
+                    tabHighlight.Height = buttonLearn.Height;
+                    tabHighlight.Top = buttonLearn.Top;
                     break;
                 case TAB_RANDOM_FUN:
                     tabHighlight.Height = buttonRandomFun.Height;
