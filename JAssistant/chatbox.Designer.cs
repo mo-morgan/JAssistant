@@ -43,6 +43,7 @@
             this.panelSendTextHolder.Controls.Add(this.bunifuButtonSendText);
             this.panelSendTextHolder.Controls.Add(this.bunifuTextBox);
             this.panelSendTextHolder.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelSendTextHolder.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelSendTextHolder.Location = new System.Drawing.Point(0, 403);
             this.panelSendTextHolder.Name = "panelSendTextHolder";
             this.panelSendTextHolder.Size = new System.Drawing.Size(248, 83);
@@ -67,15 +68,15 @@
             this.bunifuTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuTextBox.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuTextBox.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuTextBox.HintText = "";
+            this.bunifuTextBox.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuTextBox.ForeColor = System.Drawing.Color.White;
+            this.bunifuTextBox.HintForeColor = System.Drawing.Color.White;
+            this.bunifuTextBox.HintText = "Start typing here ...";
             this.bunifuTextBox.isPassword = false;
             this.bunifuTextBox.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
             this.bunifuTextBox.LineIdleColor = System.Drawing.Color.Gray;
             this.bunifuTextBox.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.bunifuTextBox.LineThickness = 4;
+            this.bunifuTextBox.LineThickness = 5;
             this.bunifuTextBox.Location = new System.Drawing.Point(15, 16);
             this.bunifuTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuTextBox.Name = "bunifuTextBox";
@@ -86,7 +87,7 @@
             // panelChatHolder
             // 
             this.panelChatHolder.AutoScroll = true;
-            this.panelChatHolder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.panelChatHolder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(44)))), ((int)(((byte)(60)))));
             this.panelChatHolder.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChatHolder.Location = new System.Drawing.Point(0, 0);
             this.panelChatHolder.Name = "panelChatHolder";

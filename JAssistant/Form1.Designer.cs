@@ -41,15 +41,15 @@
             this.panelHome = new System.Windows.Forms.Panel();
             this.makisePicture = new System.Windows.Forms.PictureBox();
             this.panelMessageHolder = new System.Windows.Forms.Panel();
+            this.chatbox1 = new JAssistant.chatbox();
             this.panelMessageTitleHolder = new System.Windows.Forms.Panel();
             this.buttonSoundOnOff = new System.Windows.Forms.Button();
             this.buttonLanguageSwitch = new System.Windows.Forms.Button();
             this.panelMakiseRoundPicture = new System.Windows.Forms.Panel();
             this.labelMakiseName = new System.Windows.Forms.Label();
             this.panelTasksHolder = new System.Windows.Forms.Panel();
-            this.panelCalendar = new System.Windows.Forms.Panel();
-            this.chatbox1 = new JAssistant.chatbox();
             this.chatbox2 = new JAssistant.chatbox();
+            this.panelCalendar = new System.Windows.Forms.Panel();
             this.panelTabHolder.SuspendLayout();
             this.panelAppNameHolder.SuspendLayout();
             this.panelHome.SuspendLayout();
@@ -219,6 +219,16 @@
             this.panelMessageHolder.Size = new System.Drawing.Size(309, 724);
             this.panelMessageHolder.TabIndex = 10;
             // 
+            // chatbox1
+            // 
+            this.chatbox1.BackColor = System.Drawing.Color.White;
+            this.chatbox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chatbox1.Location = new System.Drawing.Point(0, 63);
+            this.chatbox1.Margin = new System.Windows.Forms.Padding(8);
+            this.chatbox1.Name = "chatbox1";
+            this.chatbox1.Size = new System.Drawing.Size(309, 661);
+            this.chatbox1.TabIndex = 1;
+            // 
             // panelMessageTitleHolder
             // 
             this.panelMessageTitleHolder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
@@ -291,6 +301,15 @@
             this.panelTasksHolder.Size = new System.Drawing.Size(740, 237);
             this.panelTasksHolder.TabIndex = 8;
             // 
+            // chatbox2
+            // 
+            this.chatbox2.BackColor = System.Drawing.Color.White;
+            this.chatbox2.Location = new System.Drawing.Point(1205, 36);
+            this.chatbox2.Margin = new System.Windows.Forms.Padding(8);
+            this.chatbox2.Name = "chatbox2";
+            this.chatbox2.Size = new System.Drawing.Size(413, 785);
+            this.chatbox2.TabIndex = 0;
+            // 
             // panelCalendar
             // 
             this.panelCalendar.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -298,25 +317,6 @@
             this.panelCalendar.Name = "panelCalendar";
             this.panelCalendar.Size = new System.Drawing.Size(1049, 724);
             this.panelCalendar.TabIndex = 11;
-            // 
-            // chatbox1
-            // 
-            this.chatbox1.BackColor = System.Drawing.Color.White;
-            this.chatbox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chatbox1.Location = new System.Drawing.Point(0, 63);
-            this.chatbox1.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-            this.chatbox1.Name = "chatbox1";
-            this.chatbox1.Size = new System.Drawing.Size(309, 661);
-            this.chatbox1.TabIndex = 1;
-            // 
-            // chatbox2
-            // 
-            this.chatbox2.BackColor = System.Drawing.Color.White;
-            this.chatbox2.Location = new System.Drawing.Point(1205, 36);
-            this.chatbox2.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-            this.chatbox2.Name = "chatbox2";
-            this.chatbox2.Size = new System.Drawing.Size(413, 785);
-            this.chatbox2.TabIndex = 0;
             // 
             // Form1
             // 
@@ -326,7 +326,7 @@
             this.Controls.Add(this.panelHome);
             this.Controls.Add(this.tabHighlight);
             this.Controls.Add(this.panelTabHolder);
-            this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
