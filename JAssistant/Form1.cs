@@ -30,50 +30,40 @@ namespace JAssistant
             // Initialize logger
             logger = new Logger();
 
-            UpdateTabHighlight(TAB_HOME);
-
             // Setting the minimum size of the window
-            this.MinimumSize = new System.Drawing.Size(900, 560);
+            this.MinimumSize = new System.Drawing.Size(1247, 560);
 
-            // Initial panel
-            panelHome.Visible = true;
-            panelCalendar.Visible = false;
+            SwitchPanel(TAB_HOME);
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            UpdateTabHighlight(TAB_HOME);
+            SwitchPanel(TAB_HOME);
         }
 
         private void buttonHome_Click(object sender, EventArgs e)
         {
-            panelHome.Visible = true;
-            panelCalendar.Visible = false;
-
-            UpdateTabHighlight(TAB_HOME);
-        }
-
-        private void buttonSetting_Click(object sender, EventArgs e)
-        {
-            UpdateTabHighlight(TAB_SETTINGS);
+            SwitchPanel(TAB_HOME);
         }
 
         private void buttonCalendar_Click(object sender, EventArgs e)
         {
-            panelHome.Visible = false;
-            panelCalendar.Visible = true;
-
-            UpdateTabHighlight(TAB_CALENDAR);
+            SwitchPanel(TAB_CALENDAR);
         }
 
         private void buttonLearn_Click(object sender, EventArgs e)
         {
-            UpdateTabHighlight(TAB_LEARN);
+            SwitchPanel(TAB_LEARN);
         }
 
         private void buttonRandomFun_Click(object sender, EventArgs e)
         {
-            UpdateTabHighlight(TAB_RANDOM_FUN);
+            SwitchPanel(TAB_RANDOM_FUN);
+        }
+
+        private void buttonSetting_Click(object sender, EventArgs e)
+        {
+            SwitchPanel(TAB_SETTINGS);
         }
 
         private void buttonLanguageSwitch_Click(object sender, EventArgs e)
@@ -94,6 +84,34 @@ namespace JAssistant
         }
 
         //----------------- HELPER FUNCTIONS ------------------
+        private void SwitchPanel(int currentTab)
+        {
+            UpdatePanelContent(currentTab);
+            UpdateTabHighlight(currentTab);
+        }
+
+        private void UpdatePanelContent(int currentTab)
+        {
+            switch (currentTab)
+            {
+                case TAB_HOME:
+                    panelHome.Visible = true;
+                    panelCalendar.Visible = false;
+                    break;
+                case TAB_CALENDAR:
+                    break;
+                case TAB_LEARN:
+                    break;
+                case TAB_RANDOM_FUN:
+                    break;
+                case TAB_SETTINGS:
+                    break;
+                default:
+                    logger.ErrorMessage("No such tab number: " + currentTab);
+                    break;
+            }
+        }
+
         private void UpdateTabHighlight(int currentTab)
         {
             switch (currentTab)
