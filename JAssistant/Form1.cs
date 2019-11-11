@@ -99,31 +99,66 @@ namespace JAssistant
             switch (currentTab)
             {
                 case TAB_HOME:
-                    tabHighlight.Height = buttonHome.Height;
-                    tabHighlight.Top = buttonHome.Top;
+                    pnlStats.Height = buttonHome.Height;
+                    pnlStats.Top = buttonHome.Top;
                     break;
                 case TAB_CALENDAR:
-                    tabHighlight.Height = buttonCalendar.Height;
-                    tabHighlight.Top = buttonCalendar.Top;
+                    pnlStats.Height = buttonCalendar.Height;
+                    pnlStats.Top = buttonCalendar.Top;
                     break;
                 case TAB_LEARN:
-                    tabHighlight.Height = buttonLearn.Height;
-                    tabHighlight.Top = buttonLearn.Top;
+                    pnlStats.Height = buttonLearn.Height;
+                    pnlStats.Top = buttonLearn.Top;
                     break;
                 case TAB_RANDOM_FUN:
-                    tabHighlight.Height = buttonRandomFun.Height;
-                    tabHighlight.Top = buttonRandomFun.Top;
+                    pnlStats.Height = buttonRandomFun.Height;
+                    pnlStats.Top = buttonRandomFun.Top;
                     break;
                 case TAB_SETTINGS:
-                    tabHighlight.Height = buttonSettings.Height;
-                    tabHighlight.Top = buttonSettings.Top;
+                    pnlStats.Height = buttonSettings.Height;
+                    pnlStats.Top = buttonSettings.Top;
                     break;
                 default:
                     logger.ErrorMessage("No such tab number: " + currentTab);
                     break;
             }
 
-            tabHighlight.BringToFront();
+            pnlStats.BringToFront();
+        }
+
+     //   private void panelAppNameHolder_Paint(object sender, PaintEventArgs e)
+     //   {
+
+     //   }
+
+     //   private void tabHighlight_Paint(object sender, PaintEventArgs e)
+     //   {
+
+     //   }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chatbox1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelMessageTitleHolder_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void buttonSoundOnOff_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

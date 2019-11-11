@@ -19,5 +19,10 @@ namespace JAssistant
                 InitializeComponent();
             }
         }
+
+        private void bunifuTextBox_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
