@@ -125,40 +125,5 @@ namespace JAssistant
 
             pnlStats.BringToFront();
         }
-
-     //   private void panelAppNameHolder_Paint(object sender, PaintEventArgs e)
-     //   {
-
-     //   }
-
-     //   private void tabHighlight_Paint(object sender, PaintEventArgs e)
-     //   {
-
-     //   }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void chatbox1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panelMessageTitleHolder_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void buttonSoundOnOff_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
