@@ -84,7 +84,6 @@
             this.bunifuTextBox.Size = new System.Drawing.Size(195, 30);
             this.bunifuTextBox.TabIndex = 0;
             this.bunifuTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.bunifuTextBox.OnValueChanged += new System.EventHandler(this.bunifuTextBox_OnValueChanged);
             // 
             // panelChatHolder
             // 

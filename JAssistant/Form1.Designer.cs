@@ -78,14 +78,13 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("SentyCHALK", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(12, 97);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(176, 43);
+            this.label1.Size = new System.Drawing.Size(149, 33);
             this.label1.TabIndex = 7;
             this.label1.Text = "JAssistant";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox1
             // 
@@ -96,7 +95,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pnlStats
             // 
@@ -112,7 +110,7 @@
             this.buttonHome.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.buttonHome.FlatAppearance.BorderSize = 0;
             this.buttonHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonHome.Font = new System.Drawing.Font("Ink Free", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonHome.ForeColor = System.Drawing.Color.White;
             this.buttonHome.Image = ((System.Drawing.Image)(resources.GetObject("buttonHome.Image")));
             this.buttonHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -130,7 +128,7 @@
             this.buttonCalendar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.buttonCalendar.FlatAppearance.BorderSize = 0;
             this.buttonCalendar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCalendar.Font = new System.Drawing.Font("Ink Free", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCalendar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCalendar.ForeColor = System.Drawing.Color.White;
             this.buttonCalendar.Image = ((System.Drawing.Image)(resources.GetObject("buttonCalendar.Image")));
             this.buttonCalendar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -148,7 +146,7 @@
             this.buttonLearn.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.buttonLearn.FlatAppearance.BorderSize = 0;
             this.buttonLearn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLearn.Font = new System.Drawing.Font("Ink Free", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLearn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLearn.ForeColor = System.Drawing.Color.White;
             this.buttonLearn.Image = ((System.Drawing.Image)(resources.GetObject("buttonLearn.Image")));
             this.buttonLearn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -166,7 +164,7 @@
             this.buttonRandomFun.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.buttonRandomFun.FlatAppearance.BorderSize = 0;
             this.buttonRandomFun.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRandomFun.Font = new System.Drawing.Font("Ink Free", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRandomFun.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonRandomFun.ForeColor = System.Drawing.Color.White;
             this.buttonRandomFun.Image = ((System.Drawing.Image)(resources.GetObject("buttonRandomFun.Image")));
             this.buttonRandomFun.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -184,7 +182,7 @@
             this.buttonSettings.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.buttonSettings.FlatAppearance.BorderSize = 0;
             this.buttonSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSettings.Font = new System.Drawing.Font("Ink Free", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSettings.ForeColor = System.Drawing.Color.White;
             this.buttonSettings.Image = ((System.Drawing.Image)(resources.GetObject("buttonSettings.Image")));
             this.buttonSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -243,7 +241,6 @@
             this.panelMessageTitleHolder.Name = "panelMessageTitleHolder";
             this.panelMessageTitleHolder.Size = new System.Drawing.Size(291, 63);
             this.panelMessageTitleHolder.TabIndex = 0;
-            this.panelMessageTitleHolder.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMessageTitleHolder_Paint);
             // 
             // buttonSoundOnOff
             // 
@@ -256,7 +253,6 @@
             this.buttonSoundOnOff.Size = new System.Drawing.Size(25, 25);
             this.buttonSoundOnOff.TabIndex = 3;
             this.buttonSoundOnOff.UseVisualStyleBackColor = true;
-            this.buttonSoundOnOff.Click += new System.EventHandler(this.buttonSoundOnOff_Click);
             // 
             // buttonLanguageSwitch
             // 
@@ -286,13 +282,13 @@
             // labelMakiseName
             // 
             this.labelMakiseName.AutoSize = true;
-            this.labelMakiseName.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.labelMakiseName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.labelMakiseName.ForeColor = System.Drawing.Color.Silver;
             this.labelMakiseName.Image = ((System.Drawing.Image)(resources.GetObject("labelMakiseName.Image")));
             this.labelMakiseName.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.labelMakiseName.Location = new System.Drawing.Point(73, 23);
             this.labelMakiseName.Name = "labelMakiseName";
-            this.labelMakiseName.Size = new System.Drawing.Size(119, 17);
+            this.labelMakiseName.Size = new System.Drawing.Size(115, 18);
             this.labelMakiseName.TabIndex = 0;
             this.labelMakiseName.Text = "Makise Kurisu";
             // 
@@ -325,7 +321,6 @@
             this.chatbox1.Name = "chatbox1";
             this.chatbox1.Size = new System.Drawing.Size(291, 661);
             this.chatbox1.TabIndex = 1;
-            this.chatbox1.Load += new System.EventHandler(this.chatbox1_Load);
             // 
             // chatbox2
             // 
@@ -345,7 +340,6 @@
             this.Controls.Add(this.panelTabHolder);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
