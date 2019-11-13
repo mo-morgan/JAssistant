@@ -96,7 +96,7 @@ namespace JAssistant
             {
                 case TAB_HOME:
                     panelHome.Visible = true;
-                    panelCalendar.Visible = false;
+                    //panelCalendar.Visible = false;
                     break;
                 case TAB_CALENDAR:
                     break;

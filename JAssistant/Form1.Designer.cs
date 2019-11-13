@@ -41,14 +41,13 @@
             this.panelHome = new System.Windows.Forms.Panel();
             this.makisePicture = new System.Windows.Forms.PictureBox();
             this.panelMessageHolder = new System.Windows.Forms.Panel();
+            this.chatbox1 = new JAssistant.chatbox();
             this.panelMessageTitleHolder = new System.Windows.Forms.Panel();
             this.buttonSoundOnOff = new System.Windows.Forms.Button();
             this.buttonLanguageSwitch = new System.Windows.Forms.Button();
             this.panelMakiseRoundPicture = new System.Windows.Forms.Panel();
             this.labelMakiseName = new System.Windows.Forms.Label();
             this.panelTasksHolder = new System.Windows.Forms.Panel();
-            this.panelCalendar = new System.Windows.Forms.Panel();
-            this.chatbox1 = new JAssistant.chatbox();
             this.chatbox2 = new JAssistant.chatbox();
             this.panelTabHolder.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -200,7 +199,6 @@
             this.panelHome.Controls.Add(this.makisePicture);
             this.panelHome.Controls.Add(this.panelMessageHolder);
             this.panelHome.Controls.Add(this.panelTasksHolder);
-            this.panelHome.Controls.Add(this.panelCalendar);
             this.panelHome.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelHome.Location = new System.Drawing.Point(200, 0);
             this.panelHome.Name = "panelHome";
@@ -228,6 +226,16 @@
             this.panelMessageHolder.Name = "panelMessageHolder";
             this.panelMessageHolder.Size = new System.Drawing.Size(291, 724);
             this.panelMessageHolder.TabIndex = 10;
+            // 
+            // chatbox1
+            // 
+            this.chatbox1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.chatbox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chatbox1.Location = new System.Drawing.Point(0, 63);
+            this.chatbox1.Margin = new System.Windows.Forms.Padding(8);
+            this.chatbox1.Name = "chatbox1";
+            this.chatbox1.Size = new System.Drawing.Size(291, 661);
+            this.chatbox1.TabIndex = 1;
             // 
             // panelMessageTitleHolder
             // 
@@ -304,24 +312,6 @@
             this.panelTasksHolder.Size = new System.Drawing.Size(740, 237);
             this.panelTasksHolder.TabIndex = 8;
             // 
-            // panelCalendar
-            // 
-            this.panelCalendar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelCalendar.Location = new System.Drawing.Point(0, 0);
-            this.panelCalendar.Name = "panelCalendar";
-            this.panelCalendar.Size = new System.Drawing.Size(1031, 724);
-            this.panelCalendar.TabIndex = 11;
-            // 
-            // chatbox1
-            // 
-            this.chatbox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.chatbox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chatbox1.Location = new System.Drawing.Point(0, 63);
-            this.chatbox1.Margin = new System.Windows.Forms.Padding(8);
-            this.chatbox1.Name = "chatbox1";
-            this.chatbox1.Size = new System.Drawing.Size(291, 661);
-            this.chatbox1.TabIndex = 1;
-            // 
             // chatbox2
             // 
             this.chatbox2.BackColor = System.Drawing.Color.White;
@@ -374,7 +364,6 @@
         private System.Windows.Forms.Panel panelMakiseRoundPicture;
         private System.Windows.Forms.Label labelMakiseName;
         private System.Windows.Forms.Panel panelTasksHolder;
-        private System.Windows.Forms.Panel panelCalendar;
         private chatbox chatbox1;
         private chatbox chatbox2;
         private System.Windows.Forms.Panel pnlStats;
