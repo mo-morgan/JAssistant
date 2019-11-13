@@ -50,32 +50,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="chatbox.cs">
+    <Compile Include="Client\Controls\chatbox.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="chatbox.Designer.cs">
+    <Compile Include="Client\Controls\chatbox.Designer.cs">
       <DependentUpon>chatbox.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Client\FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Client\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="HiddenTabsControl.cs">
+    <Compile Include="Client\Controls\HiddenTabsControl.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="HiddenTabsControl.Designer.cs">
+    <Compile Include="Client\Controls\HiddenTabsControl.Designer.cs">
       <DependentUpon>HiddenTabsControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Logger.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Client\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="chatbox.resx">
+    <EmbeddedResource Include="Client\Controls\chatbox.resx">
       <DependentUpon>chatbox.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Client\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
