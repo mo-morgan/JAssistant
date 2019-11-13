@@ -38,6 +38,9 @@
             this.buttonLearn = new System.Windows.Forms.Button();
             this.buttonRandomFun = new System.Windows.Forms.Button();
             this.buttonSettings = new System.Windows.Forms.Button();
+            this.hiddenTabsControl1 = new JAssistant.HiddenTabsControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panelHome = new System.Windows.Forms.Panel();
             this.makisePicture = new System.Windows.Forms.PictureBox();
             this.panelMessageHolder = new System.Windows.Forms.Panel();
@@ -51,6 +54,8 @@
             this.chatbox2 = new JAssistant.chatbox();
             this.panelTabHolder.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.hiddenTabsControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.panelHome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.makisePicture)).BeginInit();
             this.panelMessageHolder.SuspendLayout();
@@ -199,16 +204,49 @@
             this.buttonSettings.UseVisualStyleBackColor = true;
             this.buttonSettings.Click += new System.EventHandler(this.buttonSetting_Click);
             // 
+            // hiddenTabsControl1
+            // 
+            this.hiddenTabsControl1.Controls.Add(this.tabPage1);
+            this.hiddenTabsControl1.Controls.Add(this.tabPage2);
+            this.hiddenTabsControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.hiddenTabsControl1.Location = new System.Drawing.Point(200, 0);
+            this.hiddenTabsControl1.Margin = new System.Windows.Forms.Padding(0);
+            this.hiddenTabsControl1.Name = "hiddenTabsControl1";
+            this.hiddenTabsControl1.SelectedIndex = 0;
+            this.hiddenTabsControl1.Size = new System.Drawing.Size(1031, 724);
+            this.hiddenTabsControl1.TabIndex = 1;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.BackColor = System.Drawing.Color.Transparent;
+            this.tabPage1.Controls.Add(this.panelHome);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1023, 698);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "tabPage1";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1023, 698);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
             // panelHome
             // 
             this.panelHome.Controls.Add(this.makisePicture);
             this.panelHome.Controls.Add(this.panelMessageHolder);
             this.panelHome.Controls.Add(this.panelTasksHolder);
             this.panelHome.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelHome.Location = new System.Drawing.Point(200, 0);
+            this.panelHome.Location = new System.Drawing.Point(3, 3);
             this.panelHome.Name = "panelHome";
-            this.panelHome.Size = new System.Drawing.Size(1031, 724);
-            this.panelHome.TabIndex = 7;
+            this.panelHome.Size = new System.Drawing.Size(1017, 692);
+            this.panelHome.TabIndex = 8;
             // 
             // makisePicture
             // 
@@ -229,7 +267,7 @@
             this.panelMessageHolder.Controls.Add(this.panelMessageTitleHolder);
             this.panelMessageHolder.Location = new System.Drawing.Point(740, 0);
             this.panelMessageHolder.Name = "panelMessageHolder";
-            this.panelMessageHolder.Size = new System.Drawing.Size(291, 724);
+            this.panelMessageHolder.Size = new System.Drawing.Size(277, 692);
             this.panelMessageHolder.TabIndex = 10;
             // 
             // chatbox1
@@ -239,7 +277,7 @@
             this.chatbox1.Location = new System.Drawing.Point(0, 63);
             this.chatbox1.Margin = new System.Windows.Forms.Padding(8);
             this.chatbox1.Name = "chatbox1";
-            this.chatbox1.Size = new System.Drawing.Size(291, 661);
+            this.chatbox1.Size = new System.Drawing.Size(277, 629);
             this.chatbox1.TabIndex = 1;
             // 
             // panelMessageTitleHolder
@@ -252,7 +290,7 @@
             this.panelMessageTitleHolder.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelMessageTitleHolder.Location = new System.Drawing.Point(0, 0);
             this.panelMessageTitleHolder.Name = "panelMessageTitleHolder";
-            this.panelMessageTitleHolder.Size = new System.Drawing.Size(291, 63);
+            this.panelMessageTitleHolder.Size = new System.Drawing.Size(277, 63);
             this.panelMessageTitleHolder.TabIndex = 0;
             // 
             // buttonSoundOnOff
@@ -283,7 +321,6 @@
             this.buttonLanguageSwitch.TabIndex = 2;
             this.buttonLanguageSwitch.Text = "\r\n";
             this.buttonLanguageSwitch.UseVisualStyleBackColor = false;
-            this.buttonLanguageSwitch.Click += new System.EventHandler(this.buttonLanguageSwitch_Click);
             // 
             // panelMakiseRoundPicture
             // 
@@ -309,14 +346,12 @@
             // 
             // panelTasksHolder
             // 
-            this.panelTasksHolder.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelTasksHolder.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.panelTasksHolder.Controls.Add(this.chatbox2);
-            this.panelTasksHolder.Location = new System.Drawing.Point(0, 487);
+            this.panelTasksHolder.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelTasksHolder.Location = new System.Drawing.Point(0, 0);
             this.panelTasksHolder.Name = "panelTasksHolder";
-            this.panelTasksHolder.Size = new System.Drawing.Size(740, 237);
+            this.panelTasksHolder.Size = new System.Drawing.Size(1017, 692);
             this.panelTasksHolder.TabIndex = 8;
             // 
             // chatbox2
@@ -333,7 +368,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(54)))), ((int)(((byte)(79)))));
             this.ClientSize = new System.Drawing.Size(1231, 724);
-            this.Controls.Add(this.panelHome);
+            this.Controls.Add(this.hiddenTabsControl1);
             this.Controls.Add(this.panelTabHolder);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
@@ -344,6 +379,8 @@
             this.panelTabHolder.ResumeLayout(false);
             this.panelTabHolder.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.hiddenTabsControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
             this.panelHome.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.makisePicture)).EndInit();
             this.panelMessageHolder.ResumeLayout(false);
@@ -362,20 +399,23 @@
         private System.Windows.Forms.Button buttonCalendar;
         private System.Windows.Forms.Button buttonLearn;
         private System.Windows.Forms.Button buttonRandomFun;
+        private System.Windows.Forms.Panel pnlStats;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private HiddenTabsControl hiddenTabsControl1;
+        private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Panel panelHome;
         private System.Windows.Forms.PictureBox makisePicture;
         private System.Windows.Forms.Panel panelMessageHolder;
+        private chatbox chatbox1;
         private System.Windows.Forms.Panel panelMessageTitleHolder;
         private System.Windows.Forms.Button buttonSoundOnOff;
         private System.Windows.Forms.Button buttonLanguageSwitch;
         private System.Windows.Forms.Panel panelMakiseRoundPicture;
         private System.Windows.Forms.Label labelMakiseName;
         private System.Windows.Forms.Panel panelTasksHolder;
-        private chatbox chatbox1;
         private chatbox chatbox2;
-        private System.Windows.Forms.Panel pnlStats;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TabPage tabPage2;
     }
 }
 
