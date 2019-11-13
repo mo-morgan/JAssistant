@@ -39,7 +39,7 @@
             // 
             // panelSendTextHolder
             // 
-            this.panelSendTextHolder.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.panelSendTextHolder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(54)))), ((int)(((byte)(79)))));
             this.panelSendTextHolder.Controls.Add(this.bunifuButtonSendText);
             this.panelSendTextHolder.Controls.Add(this.bunifuTextBox);
             this.panelSendTextHolder.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -52,7 +52,8 @@
             // bunifuButtonSendText
             // 
             this.bunifuButtonSendText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuButtonSendText.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuButtonSendText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(54)))), ((int)(((byte)(79)))));
+            this.bunifuButtonSendText.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuButtonSendText.Image = ((System.Drawing.Image)(resources.GetObject("bunifuButtonSendText.Image")));
             this.bunifuButtonSendText.ImageActive = null;
             this.bunifuButtonSendText.Location = new System.Drawing.Point(215, 16);
@@ -67,10 +68,10 @@
             // 
             this.bunifuTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuTextBox.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.bunifuTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(54)))), ((int)(((byte)(79)))));
             this.bunifuTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuTextBox.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuTextBox.ForeColor = System.Drawing.Color.Black;
+            this.bunifuTextBox.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuTextBox.ForeColor = System.Drawing.Color.White;
             this.bunifuTextBox.HintForeColor = System.Drawing.Color.White;
             this.bunifuTextBox.HintText = "Start typing here ...";
             this.bunifuTextBox.isPassword = false;

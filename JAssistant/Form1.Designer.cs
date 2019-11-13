@@ -107,6 +107,7 @@
             // buttonHome
             // 
             this.buttonHome.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.buttonHome.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonHome.FlatAppearance.BorderSize = 0;
             this.buttonHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -125,6 +126,7 @@
             // buttonCalendar
             // 
             this.buttonCalendar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.buttonCalendar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonCalendar.FlatAppearance.BorderSize = 0;
             this.buttonCalendar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCalendar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -143,6 +145,7 @@
             // buttonLearn
             // 
             this.buttonLearn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.buttonLearn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonLearn.FlatAppearance.BorderSize = 0;
             this.buttonLearn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLearn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -161,6 +164,7 @@
             // buttonRandomFun
             // 
             this.buttonRandomFun.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.buttonRandomFun.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonRandomFun.FlatAppearance.BorderSize = 0;
             this.buttonRandomFun.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonRandomFun.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -179,6 +183,7 @@
             // buttonSettings
             // 
             this.buttonSettings.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.buttonSettings.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonSettings.FlatAppearance.BorderSize = 0;
             this.buttonSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -254,6 +259,7 @@
             // 
             this.buttonSoundOnOff.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonSoundOnOff.BackgroundImage")));
             this.buttonSoundOnOff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonSoundOnOff.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonSoundOnOff.FlatAppearance.BorderSize = 0;
             this.buttonSoundOnOff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSoundOnOff.Location = new System.Drawing.Point(223, 19);
@@ -267,6 +273,7 @@
             this.buttonLanguageSwitch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(54)))), ((int)(((byte)(79)))));
             this.buttonLanguageSwitch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonLanguageSwitch.BackgroundImage")));
             this.buttonLanguageSwitch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonLanguageSwitch.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonLanguageSwitch.FlatAppearance.BorderSize = 0;
             this.buttonLanguageSwitch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLanguageSwitch.ForeColor = System.Drawing.SystemColors.MenuBar;
