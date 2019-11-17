@@ -25,7 +25,7 @@ namespace JAssistant
 
         public Form1()
         {
-            InitializeComponent();
+            InitializeComponent();          
 
             // Initialize logger
             logger = new Logger();
@@ -95,20 +95,35 @@ namespace JAssistant
             switch (currentTab)
             {
                 case TAB_HOME:
-                    panelHome.Visible = true;
-                    //panelCalendar.Visible = false;
-                    break;
+                    {
+                        hiddenTabsControl.SelectedIndex = TAB_HOME;
+                        break;
+                    }        
                 case TAB_CALENDAR:
-                    break;
+                    {
+                        hiddenTabsControl.SelectedIndex = TAB_CALENDAR;
+                        break;
+                    }
                 case TAB_LEARN:
-                    break;
+                    {
+                        hiddenTabsControl.SelectedIndex = TAB_LEARN;
+                        break;
+                    }
                 case TAB_RANDOM_FUN:
-                    break;
+                    {
+                        hiddenTabsControl.SelectedIndex = TAB_RANDOM_FUN;
+                        break;
+                    }
                 case TAB_SETTINGS:
-                    break;
+                    {
+                        hiddenTabsControl.SelectedIndex = TAB_SETTINGS;
+                        break;
+                    }
                 default:
-                    logger.ErrorMessage("No such tab number: " + currentTab);
-                    break;
+                    {
+                        logger.ErrorMessage("No such tab number: " + currentTab);
+                        break;
+                    }
             }
         }
 
@@ -117,28 +132,39 @@ namespace JAssistant
             switch (currentTab)
             {
                 case TAB_HOME:
-                    pnlStats.Height = buttonHome.Height;
-                    pnlStats.Top = buttonHome.Top;
-                    break;
+                    {
+                        pnlStats.Height = buttonHome.Height;
+                        pnlStats.Top = buttonHome.Top;
+                        break;
+                    }
                 case TAB_CALENDAR:
-                    pnlStats.Height = buttonCalendar.Height;
-                    pnlStats.Top = buttonCalendar.Top;
-                    break;
+                    {
+                        pnlStats.Height = buttonCalendar.Height;
+                        pnlStats.Top = buttonCalendar.Top;
+                        break;
+                    }
                 case TAB_LEARN:
-                    pnlStats.Height = buttonLearn.Height;
-                    pnlStats.Top = buttonLearn.Top;
-                    break;
+                    {
+                        pnlStats.Height = buttonLearn.Height;
+                        pnlStats.Top = buttonLearn.Top;
+                        break;
+                    }
                 case TAB_RANDOM_FUN:
-                    pnlStats.Height = buttonRandomFun.Height;
-                    pnlStats.Top = buttonRandomFun.Top;
-                    break;
+                    {
+                        pnlStats.Height = buttonRandomFun.Height;
+                        pnlStats.Top = buttonRandomFun.Top;
+                        break;
+                    }
                 case TAB_SETTINGS:
-                    pnlStats.Height = buttonSettings.Height;
-                    pnlStats.Top = buttonSettings.Top;
-                    break;
+                    {
+                        pnlStats.Height = buttonSettings.Height;
+                        pnlStats.Top = buttonSettings.Top;
+                        break;
+                    }
                 default:
-                    logger.ErrorMessage("No such tab number: " + currentTab);
-                    break;
+                    {
+                        break;
+                    }
             }
 
             pnlStats.BringToFront();
