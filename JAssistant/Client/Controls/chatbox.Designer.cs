@@ -33,8 +33,11 @@
             this.bunifuButtonSendText = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuTextBox = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.panelChatHolder = new System.Windows.Forms.Panel();
+            this.bubbleMyMessage1 = new JAssistant.Client.bubbleMyMessage();
+            this.bubbleMyMessage2 = new JAssistant.Client.bubbleMyMessage();
             this.panelSendTextHolder.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuButtonSendText)).BeginInit();
+            this.panelChatHolder.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelSendTextHolder
@@ -46,7 +49,7 @@
             this.panelSendTextHolder.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelSendTextHolder.Location = new System.Drawing.Point(0, 430);
             this.panelSendTextHolder.Name = "panelSendTextHolder";
-            this.panelSendTextHolder.Size = new System.Drawing.Size(248, 56);
+            this.panelSendTextHolder.Size = new System.Drawing.Size(606, 56);
             this.panelSendTextHolder.TabIndex = 0;
             // 
             // bunifuButtonSendText
@@ -56,7 +59,7 @@
             this.bunifuButtonSendText.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuButtonSendText.Image = ((System.Drawing.Image)(resources.GetObject("bunifuButtonSendText.Image")));
             this.bunifuButtonSendText.ImageActive = null;
-            this.bunifuButtonSendText.Location = new System.Drawing.Point(215, 16);
+            this.bunifuButtonSendText.Location = new System.Drawing.Point(573, 16);
             this.bunifuButtonSendText.Name = "bunifuButtonSendText";
             this.bunifuButtonSendText.Size = new System.Drawing.Size(30, 30);
             this.bunifuButtonSendText.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -82,7 +85,7 @@
             this.bunifuTextBox.Location = new System.Drawing.Point(13, 16);
             this.bunifuTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuTextBox.Name = "bunifuTextBox";
-            this.bunifuTextBox.Size = new System.Drawing.Size(195, 30);
+            this.bunifuTextBox.Size = new System.Drawing.Size(553, 30);
             this.bunifuTextBox.TabIndex = 0;
             this.bunifuTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -90,11 +93,29 @@
             // 
             this.panelChatHolder.AutoScroll = true;
             this.panelChatHolder.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.panelChatHolder.Controls.Add(this.bubbleMyMessage2);
+            this.panelChatHolder.Controls.Add(this.bubbleMyMessage1);
             this.panelChatHolder.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChatHolder.Location = new System.Drawing.Point(0, 0);
             this.panelChatHolder.Name = "panelChatHolder";
-            this.panelChatHolder.Size = new System.Drawing.Size(248, 430);
+            this.panelChatHolder.Size = new System.Drawing.Size(606, 430);
             this.panelChatHolder.TabIndex = 1;
+            // 
+            // bubbleMyMessage1
+            // 
+            this.bubbleMyMessage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(54)))), ((int)(((byte)(79)))));
+            this.bubbleMyMessage1.Location = new System.Drawing.Point(13, 11);
+            this.bubbleMyMessage1.Name = "bubbleMyMessage1";
+            this.bubbleMyMessage1.Size = new System.Drawing.Size(468, 85);
+            this.bubbleMyMessage1.TabIndex = 0;
+            // 
+            // bubbleMyMessage2
+            // 
+            this.bubbleMyMessage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(54)))), ((int)(((byte)(79)))));
+            this.bubbleMyMessage2.Location = new System.Drawing.Point(120, 102);
+            this.bubbleMyMessage2.Name = "bubbleMyMessage2";
+            this.bubbleMyMessage2.Size = new System.Drawing.Size(468, 85);
+            this.bubbleMyMessage2.TabIndex = 1;
             // 
             // chatbox
             // 
@@ -104,9 +125,10 @@
             this.Controls.Add(this.panelChatHolder);
             this.Controls.Add(this.panelSendTextHolder);
             this.Name = "chatbox";
-            this.Size = new System.Drawing.Size(248, 486);
+            this.Size = new System.Drawing.Size(606, 486);
             this.panelSendTextHolder.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuButtonSendText)).EndInit();
+            this.panelChatHolder.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -117,5 +139,7 @@
         private System.Windows.Forms.Panel panelChatHolder;
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuTextBox;
         private Bunifu.Framework.UI.BunifuImageButton bunifuButtonSendText;
+        private Client.bubbleMyMessage bubbleMyMessage2;
+        private Client.bubbleMyMessage bubbleMyMessage1;
     }
 }

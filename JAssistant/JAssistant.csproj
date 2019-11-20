@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Client\Controls\bubbleMyMessage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Client\Controls\bubbleMyMessage.Designer.cs">
+      <DependentUpon>bubbleMyMessage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Client\Controls\chatbox.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -71,6 +77,9 @@
     <Compile Include="Logger.cs" />
     <Compile Include="Client\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Client\Controls\bubbleMyMessage.resx">
+      <DependentUpon>bubbleMyMessage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Client\Controls\chatbox.resx">
       <DependentUpon>chatbox.cs</DependentUpon>
     </EmbeddedResource>
