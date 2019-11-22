@@ -15,11 +15,8 @@ namespace JAssistant
         // constants
         private const int OFFSET = 12;
 
-        // the current top of the 
-        private int current_top = 10;
-
         // the previous bubble to keep track of its position
-        BubbleMessage bblPrev;
+        private BubbleMessage bblPrev;
 
         public Chatbox()
         {
@@ -61,6 +58,7 @@ namespace JAssistant
 
         private void bunifuButtonSendText_Click(object sender, EventArgs e)
         {
+            // TODO: Send message from bunifuTextBox and then sends request to server for contacting DialogFlow and Deepfake
             addInMessage("Hello stub text", "00:00");
             addOutMessage("Hello stub text to you too", "00:00");
 

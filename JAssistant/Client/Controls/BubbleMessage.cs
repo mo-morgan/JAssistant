@@ -12,6 +12,7 @@ namespace JAssistant
 {
     public partial class BubbleMessage : UserControl
     {
+        // Constants
         private const int OFFSET = 10;
 
         public BubbleMessage()
@@ -23,6 +24,7 @@ namespace JAssistant
         {
             InitializeComponent();
             this.labelMessage.Text = message;
+            this.labelTime.Text = time;
 
             if (messageType.ToString() == "In")
             {
