@@ -31,7 +31,7 @@ namespace JAssistant
             logger = new Logger();
 
             // Setting the minimum size of the window
-            this.MinimumSize = new System.Drawing.Size(1247, 560);
+            this.MinimumSize = new System.Drawing.Size(1250, 560);
 
             SwitchPanel(TAB_HOME);
         }
@@ -78,8 +78,18 @@ namespace JAssistant
             }
         }
 
+        // connect to English dub voice for Kurisu
+        //  returns false if 
         private bool SwitchLanguage()
         {
+            try
+            {
+
+            }
+            catch
+            {
+
+            }
             return false;
         }
 

@@ -50,11 +50,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Client\Controls\chatbox.cs">
+    <Compile Include="Client\Controls\BubbleMessage.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Client\Controls\chatbox.Designer.cs">
-      <DependentUpon>chatbox.cs</DependentUpon>
+    <Compile Include="Client\Controls\BubbleMessage.Designer.cs">
+      <DependentUpon>BubbleMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client\Controls\Chatbox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Client\Controls\Chatbox.Designer.cs">
+      <DependentUpon>Chatbox.cs</DependentUpon>
     </Compile>
     <Compile Include="Client\FormMain.cs">
       <SubType>Form</SubType>
@@ -71,8 +77,11 @@
     <Compile Include="Logger.cs" />
     <Compile Include="Client\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Client\Controls\chatbox.resx">
-      <DependentUpon>chatbox.cs</DependentUpon>
+    <EmbeddedResource Include="Client\Controls\BubbleMessage.resx">
+      <DependentUpon>BubbleMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\Controls\Chatbox.resx">
+      <DependentUpon>Chatbox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Client\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
