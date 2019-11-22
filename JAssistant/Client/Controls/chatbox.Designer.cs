@@ -33,6 +33,8 @@
             this.bunifuButtonSendText = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuTextBox = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.panelChatHolder = new System.Windows.Forms.Panel();
+            this.labelSayHi = new System.Windows.Forms.Label();
+            this.panelMakiseStartingPicture = new System.Windows.Forms.Panel();
             this.bubbleMessage2 = new JAssistant.BubbleMessage();
             this.bubbleMessage1 = new JAssistant.BubbleMessage();
             this.panelSendTextHolder.SuspendLayout();
@@ -94,6 +96,8 @@
             // 
             this.panelChatHolder.AutoScroll = true;
             this.panelChatHolder.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.panelChatHolder.Controls.Add(this.labelSayHi);
+            this.panelChatHolder.Controls.Add(this.panelMakiseStartingPicture);
             this.panelChatHolder.Controls.Add(this.bubbleMessage2);
             this.panelChatHolder.Controls.Add(this.bubbleMessage1);
             this.panelChatHolder.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -102,14 +106,35 @@
             this.panelChatHolder.Size = new System.Drawing.Size(606, 430);
             this.panelChatHolder.TabIndex = 1;
             // 
+            // labelSayHi
+            // 
+            this.labelSayHi.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.labelSayHi.AutoSize = true;
+            this.labelSayHi.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSayHi.Location = new System.Drawing.Point(162, 88);
+            this.labelSayHi.Name = "labelSayHi";
+            this.labelSayHi.Size = new System.Drawing.Size(283, 20);
+            this.labelSayHi.TabIndex = 3;
+            this.labelSayHi.Text = "Say hi to your new virtual assistant, Kurisu!";
+            // 
+            // panelMakiseStartingPicture
+            // 
+            this.panelMakiseStartingPicture.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelMakiseStartingPicture.BackgroundImage")));
+            this.panelMakiseStartingPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panelMakiseStartingPicture.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelMakiseStartingPicture.Location = new System.Drawing.Point(0, 0);
+            this.panelMakiseStartingPicture.Name = "panelMakiseStartingPicture";
+            this.panelMakiseStartingPicture.Size = new System.Drawing.Size(606, 85);
+            this.panelMakiseStartingPicture.TabIndex = 2;
+            // 
             // bubbleMessage2
             // 
             this.bubbleMessage2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bubbleMessage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(54)))), ((int)(((byte)(79)))));
-            this.bubbleMessage2.Location = new System.Drawing.Point(124, 100);
+            this.bubbleMessage2.Location = new System.Drawing.Point(88, 253);
             this.bubbleMessage2.Name = "bubbleMessage2";
-            this.bubbleMessage2.Size = new System.Drawing.Size(468, 83);
+            this.bubbleMessage2.Size = new System.Drawing.Size(505, 83);
             this.bubbleMessage2.TabIndex = 1;
             this.bubbleMessage2.Visible = false;
             // 
@@ -119,9 +144,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bubbleMessage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(54)))), ((int)(((byte)(79)))));
-            this.bubbleMessage1.Location = new System.Drawing.Point(13, 11);
+            this.bubbleMessage1.Location = new System.Drawing.Point(13, 164);
             this.bubbleMessage1.Name = "bubbleMessage1";
-            this.bubbleMessage1.Size = new System.Drawing.Size(468, 83);
+            this.bubbleMessage1.Size = new System.Drawing.Size(495, 83);
             this.bubbleMessage1.TabIndex = 0;
             this.bubbleMessage1.Visible = false;
             // 
@@ -137,6 +162,7 @@
             this.panelSendTextHolder.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuButtonSendText)).EndInit();
             this.panelChatHolder.ResumeLayout(false);
+            this.panelChatHolder.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -149,5 +175,7 @@
         private Bunifu.Framework.UI.BunifuImageButton bunifuButtonSendText;
         private BubbleMessage bubbleMessage2;
         private BubbleMessage bubbleMessage1;
+        private System.Windows.Forms.Label labelSayHi;
+        private System.Windows.Forms.Panel panelMakiseStartingPicture;
     }
 }
