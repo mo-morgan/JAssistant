@@ -1,6 +1,6 @@
-﻿namespace JAssistant.Client
+﻿namespace JAssistant
 {
-    partial class bubbleMyMessage
+    partial class BubbleMessage
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.labelMessage = new System.Windows.Forms.Label();
             this.labelTime = new System.Windows.Forms.Label();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.SuspendLayout();
             // 
             // labelMessage
@@ -48,21 +50,26 @@
             // labelTime
             // 
             this.labelTime.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTime.ForeColor = System.Drawing.Color.LightGray;
+            this.labelTime.ForeColor = System.Drawing.Color.DarkGray;
             this.labelTime.Location = new System.Drawing.Point(9, 79);
             this.labelTime.Name = "labelTime";
             this.labelTime.Size = new System.Drawing.Size(391, 17);
             this.labelTime.TabIndex = 1;
             this.labelTime.Text = "Wed 12:49 pm";
             // 
-            // bubbleMyMessage
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 5;
+            this.bunifuElipse1.TargetControl = this;
+            // 
+            // BubbleMessage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(54)))), ((int)(((byte)(79)))));
             this.Controls.Add(this.labelTime);
             this.Controls.Add(this.labelMessage);
-            this.Name = "bubbleMyMessage";
+            this.Name = "BubbleMessage";
             this.Size = new System.Drawing.Size(408, 101);
             this.Resize += new System.EventHandler(this.bubbleMyMessage_Resize);
             this.ResumeLayout(false);
@@ -73,5 +80,6 @@
 
         private System.Windows.Forms.Label labelMessage;
         private System.Windows.Forms.Label labelTime;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
     }
 }

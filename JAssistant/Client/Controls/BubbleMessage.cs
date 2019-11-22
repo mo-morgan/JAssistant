@@ -8,22 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace JAssistant.Client
+namespace JAssistant
 {
-    public partial class bubbleMyMessage : UserControl
+    public partial class BubbleMessage : UserControl
     {
-        public enum msgtype
-        {
-            In,
-            Out
-        }
+        private const int OFFSET = 10;
 
-        public bubbleMyMessage()
+        public BubbleMessage()
         {
             InitializeComponent();
         }
         
-        public bubbleMyMessage(string message, string time, msgtype messageType)
+        public BubbleMessage(string message, string time, MsgType messageType)
         {
             InitializeComponent();
             this.labelMessage.Text = message;
@@ -31,8 +27,8 @@ namespace JAssistant.Client
             if (messageType.ToString() == "In")
             {
                 // incoming message
-                this.BackColor = Color.FromArgb(255, 255, 255);
-                this.ForeColor = Color.FromArgb(0, 0, 0);
+                this.BackColor = Color.FromKnownColor(KnownColor.White);
+                this.labelMessage.ForeColor = Color.FromKnownColor(KnownColor.Black);
             }
             else
             {
@@ -52,14 +48,20 @@ namespace JAssistant.Client
             labelMessage.Height = int.Parse(Math.Round(size.Height + 2, 0).ToString());
 
             // adding a constant for extra padding
-            labelTime.Top = labelMessage.Bottom + 10;
+            labelTime.Top = labelMessage.Bottom + OFFSET;
             
-            this.Height = labelTime.Bottom + labelMessage.Top + 4;
+            this.Height = labelTime.Bottom + OFFSET;
         }
 
         private void bubbleMyMessage_Resize(object sender, EventArgs e)
         {
             SetBubbleHeight();
         }
+    }
+
+    public enum MsgType
+    {
+        In,
+        Out
     }
 }
