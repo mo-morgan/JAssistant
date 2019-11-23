@@ -59,8 +59,10 @@ namespace JAssistant
         private void bunifuButtonSendText_Click(object sender, EventArgs e)
         {
             // TODO: Send message from bunifuTextBox and then sends request to server for contacting DialogFlow and Deepfake
-            addInMessage("Hello stub text", "00:00");
-            addOutMessage("Hello stub text to you too", "00:00");
+            addInMessage("Hello stub text", DateTime.Now.ToString());
+            addOutMessage(bunifuTextBox.Text, DateTime.Now.ToString());
+
+            bunifuTextBox.Text = "";
 
             panelChatHolder.VerticalScroll.Value = panelChatHolder.VerticalScroll.Maximum;
         }

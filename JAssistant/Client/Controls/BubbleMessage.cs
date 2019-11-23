@@ -12,7 +12,7 @@ namespace JAssistant
 {
     public partial class BubbleMessage : UserControl
     {
-        // C
+        // Constants
         private const int OFFSET = 10;
 
         public BubbleMessage()
