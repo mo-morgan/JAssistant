@@ -23,6 +23,10 @@ namespace JAssistant
         // Logging
         private Logger logger;
 
+        // UI
+        private bool isJapanese = true;
+        private bool isSoundOn = true;
+
         public Form1()
         {
             InitializeComponent();          
@@ -74,7 +78,16 @@ namespace JAssistant
             }
             else
             {
-
+                if (isJapanese)
+                {
+                    buttonLanguageSwitch.BackgroundImage = Properties.Resources.english_50px;
+                    isJapanese = false;
+                }
+                else
+                {
+                    buttonLanguageSwitch.BackgroundImage = Properties.Resources.japanese_50px;
+                    isJapanese = true;
+                }
             }
         }
 
@@ -90,7 +103,41 @@ namespace JAssistant
             {
 
             }
-            return false;
+            return true;
+        }
+
+        private void buttonSoundOnOff_Click(object sender, EventArgs e)
+        {
+            if (!SwitchSoundOnOff())
+            {
+                logger.ErrorMessage("Cannot switch Sound On Off");
+            }
+            else
+            {
+                if (isSoundOn)
+                {
+                    buttonSoundOnOff.BackgroundImage = Properties.Resources.sound_off_50px;
+                    isSoundOn = false;
+                }
+                else
+                {
+                    buttonSoundOnOff.BackgroundImage = Properties.Resources.sound_on_50px;
+                    isSoundOn = true;
+                }
+            }
+        }
+
+        private bool SwitchSoundOnOff()
+        {
+            try
+            {
+
+            }
+            catch
+            {
+
+            }
+            return true;
         }
 
         //----------------- HELPER FUNCTIONS ------------------

@@ -311,6 +311,7 @@
             this.buttonSoundOnOff.Size = new System.Drawing.Size(25, 25);
             this.buttonSoundOnOff.TabIndex = 3;
             this.buttonSoundOnOff.UseVisualStyleBackColor = true;
+            this.buttonSoundOnOff.Click += new System.EventHandler(this.buttonSoundOnOff_Click);
             // 
             // buttonLanguageSwitch
             // 
@@ -327,6 +328,7 @@
             this.buttonLanguageSwitch.TabIndex = 2;
             this.buttonLanguageSwitch.Text = "\r\n";
             this.buttonLanguageSwitch.UseVisualStyleBackColor = false;
+            this.buttonLanguageSwitch.Click += new System.EventHandler(this.buttonLanguageSwitch_Click);
             // 
             // panelMakiseRoundPicture
             // 
