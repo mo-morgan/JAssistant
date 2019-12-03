@@ -97,7 +97,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(12, 97);
+            this.label1.Location = new System.Drawing.Point(25, 97);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(149, 33);
             this.label1.TabIndex = 7;
@@ -375,7 +375,7 @@
             this.tabCalendar.Location = new System.Drawing.Point(4, 22);
             this.tabCalendar.Name = "tabCalendar";
             this.tabCalendar.Padding = new System.Windows.Forms.Padding(3);
-            this.tabCalendar.Size = new System.Drawing.Size(1076, 698);
+            this.tabCalendar.Size = new System.Drawing.Size(1026, 698);
             this.tabCalendar.TabIndex = 1;
             this.tabCalendar.Text = "Calendar";
             this.tabCalendar.UseVisualStyleBackColor = true;
@@ -387,7 +387,7 @@
             this.panelCalendar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelCalendar.Location = new System.Drawing.Point(3, 3);
             this.panelCalendar.Name = "panelCalendar";
-            this.panelCalendar.Size = new System.Drawing.Size(1070, 692);
+            this.panelCalendar.Size = new System.Drawing.Size(1020, 692);
             this.panelCalendar.TabIndex = 0;
             // 
             // labelCalendar
@@ -405,7 +405,7 @@
             this.tabLearn.Controls.Add(this.panelLearn);
             this.tabLearn.Location = new System.Drawing.Point(4, 22);
             this.tabLearn.Name = "tabLearn";
-            this.tabLearn.Size = new System.Drawing.Size(1076, 698);
+            this.tabLearn.Size = new System.Drawing.Size(1026, 698);
             this.tabLearn.TabIndex = 2;
             this.tabLearn.Text = "Learn";
             this.tabLearn.UseVisualStyleBackColor = true;
@@ -416,7 +416,7 @@
             this.panelLearn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelLearn.Location = new System.Drawing.Point(0, 0);
             this.panelLearn.Name = "panelLearn";
-            this.panelLearn.Size = new System.Drawing.Size(1076, 698);
+            this.panelLearn.Size = new System.Drawing.Size(1026, 698);
             this.panelLearn.TabIndex = 0;
             // 
             // tabRandomFun
@@ -424,7 +424,7 @@
             this.tabRandomFun.Controls.Add(this.panelRandomFun);
             this.tabRandomFun.Location = new System.Drawing.Point(4, 22);
             this.tabRandomFun.Name = "tabRandomFun";
-            this.tabRandomFun.Size = new System.Drawing.Size(1076, 698);
+            this.tabRandomFun.Size = new System.Drawing.Size(1026, 698);
             this.tabRandomFun.TabIndex = 3;
             this.tabRandomFun.Text = "Random Fun";
             this.tabRandomFun.UseVisualStyleBackColor = true;
@@ -435,7 +435,7 @@
             this.panelRandomFun.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelRandomFun.Location = new System.Drawing.Point(0, 0);
             this.panelRandomFun.Name = "panelRandomFun";
-            this.panelRandomFun.Size = new System.Drawing.Size(1076, 698);
+            this.panelRandomFun.Size = new System.Drawing.Size(1026, 698);
             this.panelRandomFun.TabIndex = 0;
             // 
             // tabSettings
@@ -443,7 +443,7 @@
             this.tabSettings.Controls.Add(this.panelSettings);
             this.tabSettings.Location = new System.Drawing.Point(4, 22);
             this.tabSettings.Name = "tabSettings";
-            this.tabSettings.Size = new System.Drawing.Size(1076, 698);
+            this.tabSettings.Size = new System.Drawing.Size(1026, 698);
             this.tabSettings.TabIndex = 4;
             this.tabSettings.Text = "Settings";
             this.tabSettings.UseVisualStyleBackColor = true;
@@ -454,7 +454,7 @@
             this.panelSettings.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelSettings.Location = new System.Drawing.Point(0, 0);
             this.panelSettings.Name = "panelSettings";
-            this.panelSettings.Size = new System.Drawing.Size(1076, 698);
+            this.panelSettings.Size = new System.Drawing.Size(1026, 698);
             this.panelSettings.TabIndex = 0;
             // 
             // Form1
